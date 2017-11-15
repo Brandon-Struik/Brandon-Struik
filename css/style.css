@@ -5,3 +5,7 @@
 .page-footer .footer-copyright {
 	background-color: transparent;
 }
+
+.card-image {
+    border: 3px solid black;
+}

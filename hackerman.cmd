@@ -1,0 +1,1 @@
+dir images /b /a-d > js\data.txt

@@ -9,3 +9,19 @@
 .card-image {
     border: 3px solid black;
 }
+
+.offerteAanvragen {
+	margin-bottom: 0px;
+}
+
+.material-icons {
+	margin-right: 3px;
+}
+
+.white-text a{
+  color: #fff;
+ }
+
+ .white-text a:hover{
+  color: #039be5;
+ }

@@ -1,5 +1,15 @@
 $( document ).ready(function() {
-    var element = $($('#imageGalery').children()[0]);
+    var element = $(`<div class="col s12 m4 hide">
+        <div class="card brown lighten-2">
+          <div class="card-image">
+            <img class="materialboxed" src="#">
+          </div>
+          <div class="card-content">
+            <span class="card-title"></span>
+            <p class="card-description"></p>
+          </div>
+        </div>
+      </div>`);
 	$.ajax({
 		url:'js/data.txt',
 		success: function(response) {
@@ -16,6 +26,7 @@ $( document ).ready(function() {
 					$('#imageGalery').append(newElement);
 				}
 			});
+			$('.materialboxed').materialbox();
 		}
 	});
 });

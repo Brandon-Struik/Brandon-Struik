@@ -16,9 +16,7 @@ $( document ).ready(function() {
 					$('#imageGalery').append(newElement);
 				}
 			});
-		},
-		dataType: "json",
-		mimeType: "application/json"
+		}
 	});
 });
 

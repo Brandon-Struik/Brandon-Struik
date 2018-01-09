@@ -1,1 +1,1 @@
-dir images /b /a-d > js\data.txt
+dir galery /b /a-d > js\data.txt

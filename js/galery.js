@@ -18,10 +18,17 @@ $( document ).ready(function() {
 				if(image){
 					var newElement = element.clone();
 					var title = image.split('-')[0];
-					var description = image.split('-')[1].slice(0,-4);
 					newElement.find('.materialboxed')[0].setAttribute('src', 'galery/' +image);
+
+					if(image.split('-')[1]) {
+						var description = image.split('-')[1].slice(0,-4);
+						$(newElement.find('.card-description')[0]).html(description);
+						newElement.find('.materialboxed')[0].setAttribute('data-caption', description);
+					} else {
+						title = title.slice(0,-5);
+					}
+					newElement.find('.materialboxed')[0].setAttribute('data-lightbox', title.replace("/ /g", "-"));
 					$(newElement.find('.card-title')[0]).html(title);
-					$(newElement.find('.card-description')[0]).html(description);
 					newElement.removeClass('hide');
 					$('#imageGalery').append(newElement);
 				}
